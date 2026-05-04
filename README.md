@@ -1,2 +1,2 @@
 # FTL-faster-than-Like
-A recreation of the 2d game FTL faster than light. made in godot and made with claude and gemini
+A recreation of the 2d game FTL faster than light. made in godot and made with claude and gemini. this is my first big project. there were alot of moments where i needed to alter the code or force claude to rewrite untill i actually could be used. alot of hidden functions that are used i games were completely new to me before starting this project. overal good learning experiance 
