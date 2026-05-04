@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cbbfy300o68sm"]
+
+[ext_resource type="Script" uid="uid://6a37agf5sb46" path="res://Scripts/Door.gd" id="1_80gjo"]
+[ext_resource type="Texture2D" uid="uid://ouaudf2bng5v" path="res://Assets/ftl joppoe-01-01-01.png" id="1_nm67b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo6ap"]
+size = Vector2(8, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kfqa2"]
+size = Vector2(1, 33)
+
+[node name="VDoor" type="Node2D" unique_id=2018894196]
+script = ExtResource("1_80gjo")
+
+[node name="Node" type="Node" parent="." unique_id=1309248986]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=265080114]
+texture = ExtResource("1_nm67b")
+region_enabled = true
+region_rect = Rect2(124.96384, 31.942373, 7.2117157, 33.215492)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=122692543]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1273627012]
+shape = SubResource("RectangleShape2D_jo6ap")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1651226501]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1388790785]
+shape = SubResource("RectangleShape2D_kfqa2")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="StaticBody2D" unique_id=898622742]
+radius = 10.0
+vertices = PackedVector2Array(5, 16, 5, -16, -5, -16, -5, 16)
+affect_navigation_mesh = true
+carve_navigation_mesh = true

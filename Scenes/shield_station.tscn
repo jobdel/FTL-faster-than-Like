@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cdxxmnulcgnyg"]
+
+[ext_resource type="PackedScene" uid="uid://bmrls1cys10vt" path="res://Stations/station.tscn" id="1_8w2pq"]
+
+[node name="ShieldStation" unique_id=1871064027 instance=ExtResource("1_8w2pq")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1631010233]
+region_rect = Rect2(95.99472, 115.660576, 32.026764, 45.778862)

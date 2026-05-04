@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bruhqaymq6ts4"]
+
+[ext_resource type="PackedScene" uid="uid://bmrls1cys10vt" path="res://Stations/station.tscn" id="1_gjrg8"]
+
+[node name="PilotStation" unique_id=1871064027 instance=ExtResource("1_gjrg8")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1631010233]
+region_rect = Rect2(416.15192, 115.14928, 31.80783, 44.546234)

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://muthfelpi3nb"]
+
+[ext_resource type="PackedScene" uid="uid://bmrls1cys10vt" path="res://Stations/station.tscn" id="1_337u6"]
+
+[node name="WeaponStation" unique_id=1871064027 instance=ExtResource("1_337u6")]
+system_name = "WeaponStation"

@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b23ubfqliayvb"]
+
+[ext_resource type="PackedScene" uid="uid://bdfl4tkgiikhh" path="res://Scenes/ship_ui.tscn" id="1_pu3va"]
+[ext_resource type="Script" path="res://Scripts/BulletsLayer.gd" id="3_bullets"]
+[ext_resource type="PackedScene" uid="uid://ddpfwh5eiedyx" path="res://Scenes/space_ship_1.tscn" id="2_0e3vx"]
+[ext_resource type="Texture2D" uid="uid://btcpkik4ba462" path="res://Assets/Wallpapers/pexels-stars-2179083.jpg" id="2_6j5ir"]
+
+[node name="MainGame" type="Node2D" unique_id=1001825416]
+
+[node name="CanvasLayerText" type="CanvasLayer" parent="." unique_id=1314297733]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=702156179]
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 40.0
+offset_bottom = 40.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1443614389]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+size_2d_override = Vector2i(640, 360)
+render_target_update_mode = 4
+
+[node name="Camera2D2" type="Camera2D" parent="SubViewportContainer/SubViewport" unique_id=978546532]
+position = Vector2(3, 0)
+offset = Vector2(-40, -40)
+zoom = Vector2(2.2, 2.2)
+
+[node name="SpaceShip1" parent="SubViewportContainer/SubViewport/Camera2D2" unique_id=1185207056 instance=ExtResource("2_0e3vx")]
+
+[node name="BulletsLayer" type="Node2D" parent="SubViewportContainer/SubViewport" unique_id=111222333]
+script = ExtResource("3_bullets")
+
+[node name="Ship UI" parent="SubViewportContainer/SubViewport" unique_id=480258907 instance=ExtResource("1_pu3va")]
+
+[node name="BG" type="CanvasLayer" parent="SubViewportContainer/SubViewport" unique_id=915162620]
+layer = -2
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/BG" unique_id=687628764]
+position = Vector2(119, 79)
+texture = ExtResource("2_6j5ir")

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bdfl4tkgiikhh"]
+
+[ext_resource type="Script" uid="uid://bwjhrtva8cce7" path="res://Scripts/ship_ui.gd" id="1_shipui"]
+
+[node name="Ship UI" type="CanvasLayer" unique_id=1453955458]
+
+[node name="HUDLayer" type="Control" parent="." unique_id=506654519]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="HUDPanel" type="Panel" parent="HUDLayer" unique_id=1159099534]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 916.0
+offset_right = 1932.0
+offset_bottom = 1076.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("1_shipui")
+
+[node name="TopResources" type="HBoxContainer" parent="HUDLayer" unique_id=419648245]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="HUDLayer/TopResources" unique_id=82960932]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HUDLayer/TopResources" unique_id=1304098700]
+layout_mode = 2

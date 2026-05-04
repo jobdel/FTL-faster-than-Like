@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://m23io53qvq2w"]
+
+[node name="DoubleDoor" type="Node2D" unique_id=1178896717]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1818258557]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=47099504]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=308196374]
